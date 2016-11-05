@@ -1,0 +1,64 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Get the city weather information by zipcode",
+        "description": "",
+        "id": ";get-the-city-weather-information-by-zipcode",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26803945760,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I have a list of zipcode",
+            "match": {
+              "location": "WeatherTestByZipCode.i_have_a_list_of_zipcode()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20142958658,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I use the weather service to get the weather information",
+            "match": {
+              "location": "WeatherTestByZipCode.i_use_the_weather_service_to_get_the_weather_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 722185743,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the information should be found successfully",
+            "match": {
+              "location": "WeatherTestByZipCode.the_information_should_be_found_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@getWeatherByZipcode"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "\n      As weather web service user\n\n      I will be able to get the weather information by the predefined operations in the WSDL",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "WeatherService.feature"
+  }
+]
